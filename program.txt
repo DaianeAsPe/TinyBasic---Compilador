@@ -1,0 +1,17 @@
+10 REM Programa de exemplo TinyBasic
+20 LET A = 10
+30 LET B = 5
+40 PRINT "Valores iniciais:", A, B
+50 INPUT C
+60 PRINT "Você digitou:", C
+70 IF C > B THEN 100
+80 PRINT "C não é maior que B"
+90 GOTO 110
+100 GOSUB 200
+110 PRINT "Fim do teste IF/GOTO/GOSUB"
+120 END
+200 REM Sub-rotina de teste
+210 PRINT "Entrou na sub-rotina"
+220 LET A = A + 1
+230 PRINT "A incrementado:", A
+240 RETURN
