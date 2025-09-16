@@ -26,7 +26,11 @@ class Interpreter:
     def run(self):
         i = 0
         while i < len(self.ast):
-            i = self.execute_line(i)  # retorna próximo índice da linha
+            #i = self.execute_line(i)  # retorna próximo índice da linha
+            next_i = self.execute_line(i)
+            if next_i == -1:  # encontrou END
+                break
+            i = next_i
 
     # ========================================================
     # Executa uma linha inteira
@@ -99,7 +103,7 @@ class Interpreter:
 
         elif t == "END":
             print("Fim do programa.")
-            exit(0)
+            return -1 #antes exit(0)
 
         elif t == "REM":
             pass  # ignora comentários
