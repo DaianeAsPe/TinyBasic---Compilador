@@ -1,1 +1,1 @@
-testando
+Projeto de um compilador da linguagem TinyBasic construído na linguagem Python como requisito de obtenção de nota  parcial na disciplina do 8º período do curso de Engenharia da Computação da Universidade Federal do Pará (UFPA).
